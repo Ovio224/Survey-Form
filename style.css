@@ -1,0 +1,121 @@
+@import
+url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+input::placeholder {
+  font-family: 'Raleway';
+}
+.dropdown {
+  font-family: 'Raleway';
+}
+input,
+button {
+  font-family: 'Raleway';
+}
+
+html,
+body {
+  font-family: 'Raleway', 'Trebuchet MS';
+  background-color: #c7efcf;
+  min-width: 320px;
+  text-align: center;
+  color: #111;
+}
+
+#form-outer {
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 900px;
+  padding-top: 5px;
+  padding: 10px;
+}
+
+#title {
+  margin: 20px;
+  font-size: 2.2rem;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 48%;
+}
+
+.input-field {
+  height: 35px;
+  width: 155px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2.5px;
+}
+
+#dropdown {
+  height: 35px;
+  width: 170px;
+  margin: 20px 30px 0 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2.5px;
+  padding: 5px;
+}
+
+
+.radio, .checkbox {
+  position: relative;
+  left: -32px;
+  padding-bottom: 7px;
+  display: block;
+}
+
+#submit {
+  background-color: #59ace0;
+  height: 40px;
+  width: 96px;
+  border-radius: 7px;
+  color: #FFF;
+  font-size: 1em;
+  margin: 30px 0 0 0;
+  border: 0px solid;
+  transition: width 100ms, height 100ms;
+}
+
+#submit:hover {
+  width: 86px;
+  height: 35px;
+}
+
+textarea {
+  margin: 15px 10px 0 10;
+  border: 1px solid #c0c0c0;
+  border-radius: 2.5px;
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 520px) {
+  .labels{
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

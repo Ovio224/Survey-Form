@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+      <h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <body>
+  <p id="description">This is a project made by Ovi</p>
+  <form id="survey-form" action="index.html" method="GET">
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="name" id="name-label">* Name:</label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="email" id="email-label">* Email</label>
+        </div>
+        <div class="rightTab">
+          <input autofocus type="email" name="email" id="email" placeholder="Enter your email"  class="input-field" required>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="Age" id="number-label">* Age</label>
+        </div>
+        <div class="rightTab">
+          <input id="number" type="number" name="age" placeholder="Age" min="16" max="125" class="input-field">
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How likely is that you would like to have a chat with me?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"> <label> <input type="radio" name="radio-buttons" value="1" class="userRating" >Definetely</label> </li>
+          <li class="radio"> <label> <input type="radio" name="radio-buttons" value="2" class="userRating">Maybe </label> </li>
+          <li class="radio"> <label> <input type="radio" name="radio-buttons" value="3" class="userRating">Not sure </label> </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="wishingRoles">What roles are you looking for?</label>
+      </div>
+        <div class="rightTab">
+          <select class="dropdown" name="wishingRoles" id="dropdown">
+            <option disabled selected >Select an option</option>
+            <option value="" class="userRating">Front-end Developer</option>
+            <option value="" class="userRating">Back-end Developer</option>
+            <option value="" class="userRating">Full-stack Developer</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="projects">What are the things you wish you would see in a portfolio?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="checkbox"> <label> <input type="checkbox" name="checkbox" value="1" class="userRating" >Simple Website</label> </li>
+          <li class="checkbox"> <input type="checkbox" name="prefer" value="2" class="userRating">Modern Websites </li>
+          <li class="checkbox"> <input type="checkbox" name="checkbox" value="3" class="userRating">Beautiful Design </li>
+          <li class="checkbox"> <input type="checkbox" name="checkbox" value="4" class="userRating">Multi-paged Sites</li>
+          <li class="checkbox"> <input type="checkbox" name="checkbox" value="5" class="userRating">Other projects </li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Any other suggestions you would like to add?</label>
+        </div>
+        <div class="rightTab">
+          <textarea name="comments" rows="4" cols="22" id="suggestionbox" placeholder="Enter your suggestions here..."></textarea>
+        </div>
+      </div>
+
+      <button type="submit" name="button" id="submit">Submit</button>
+
+  </form>
+  </body>
+  </div>
+</html>
